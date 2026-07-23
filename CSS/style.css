@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aqua;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: magenta;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    padding: 20px;
+}
+
+/* Clear floats */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Navigation */
+nav {
+    float: left;
+    width: 20%;
+    height: 400px;
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Article */
+article {
+    float: left;
+    width: 80%;
+    height: 400px;
+    background-color: brown;
+    color: white;
+    padding: 20px;
+}
+
+article h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    color: black;
+}
+
+table td {
+    border: 2px solid black;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+/* Footer */
+footer {
+    clear: both;
+    background-color: azure;
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    nav,
+    article {
+        width: 100%;
+        float: none;
+        height: auto;
+    }
+
+    header {
+        font-size: 40px;
+    }
+
+    footer {
+        font-size: 28px;
+    }
+
+    table td {
+        font-size: 18px;
+        padding: 15px;
+    }
+}
