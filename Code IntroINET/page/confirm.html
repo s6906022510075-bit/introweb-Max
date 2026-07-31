@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FloydTech | ยืนยันคำสั่งซื้อ</title>
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/confirm.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 1. Header with Left-Aligned Logo & Shop Title -->
+        <header>
+            <div class="header-container">
+                <a href="index.html" class="brand-link" title="FLoydTech Electronics">
+                    <img src="/img/logo.jpg" alt="FLoydTech Logo" class="brand-logo-img">
+                    <span class="brand-name">FLOYD<span class="accent-text">TECH</span></span>
+                </a>
+            </div>
+        </header>
+
+        <!-- 2. Top Menu -->
+        <nav class="top-menu">
+            <ul class="clearfix">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="product.html">สินค้าทั้งหมด</a></li>
+                <li><a href="#">ติดต่อเรา</a></li>
+                <!-- Cart Icon with SVG -->
+                <li style="float: right;">
+                    <a href="cart.html" class="cart-icon-btn" title="ตะกร้าสินค้า">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; display: inline-block;">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span class="cart-badge">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="main-wrapper clearfix">
+            <!-- 3. Side Menu -->
+             <aside class="side-menu">
+                <h3>หมวดหมู่สินค้า</h3>
+                <ul>
+                    <li><a href="product.html#gaming-gear">Gaming Gear</a></li>
+                    <li><a href="product.html#laptop">Gaming Laptop</a></li>
+                    <li><a href="product.html#pc-components">PC Components</a></li>
+                    <li><a href="product.html#monitors">Monitors</a></li>
+                    <li><a href="product.html#gadgets">Gadgets & Acc</a></li>
+                </ul>
+            </aside>
+
+            <!-- 4. Content Area: Order Confirmation -->
+            <main class="content">
+                <div class="confirm-card">
+                    <!-- Success Header -->
+                    <div class="success-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    
+                    <h2>สั่งซื้อสินค้าสำเร็จ!</h2>
+                    <p class="confirm-subtitle">ขอบคุณที่ร่วมเป็นส่วนหนึ่งของ FloydTech Electronics</p>
+                    <div class="order-id-badge">หมายเลขคำสั่งซื้อ: <strong>#FT-2026-8891</strong></div>
+
+                    <!-- Order Summary Box -->
+                    <div class="confirm-details-box">
+                        <h4>📋 รายการสั่งซื้อ</h4>
+                        <div class="confirm-item">
+                            <span>RGB Gaming Mouse Pro (x1)</span>
+                            <span class="item-price">1,290 ฿</span>
+                        </div>
+                        <div class="confirm-item">
+                            <span>Mechanical Keyboard RGB (x1)</span>
+                            <span class="item-price">2,590 ฿</span>
+                        </div>
+                        
+                        <hr class="summary-divider">
+
+                        <div class="confirm-item total">
+                            <span>ยอดชำระทั้งหมด</span>
+                            <span class="total-price">3,880 ฿</span>
+                        </div>
+                    </div>
+
+                    <!-- Shipping Address Info -->
+                    <div class="shipping-info-box">
+                        <h4>📍 ข้อมูลการจัดส่ง</h4>
+                        <p><strong>ชื่อผู้รับ:</strong> สมชาย สายเกมมิ่ง</p>
+                        <p><strong>ที่อยู่:</strong> 123/45 ถนนพหลโยธิน แขวงลาดยาว เขตจตุจักร กรุงเทพฯ 10900</p>
+                        <p><strong>เบอร์โทรศัพท์:</strong> 081-234-5678</p>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="confirm-actions">
+                        <a href="index.html" class="btn-primary btn-home">กลับสู่หน้าแรก</a>
+                        <a href="product.html" class="btn-secondary btn-shop-more">เลือกซื้อสินค้าเพิ่ม</a>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+            </main>
+        </div>
+
+        <!-- 5. Footer -->
+        <footer>
+            <p>&copy; 2026 FloydTech Electronics Store. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

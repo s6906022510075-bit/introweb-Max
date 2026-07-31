@@ -1,0 +1,304 @@
+/* ===================================================
+   CONFIRM.CSS - Order Confirmation Page Only
+   =================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Kanit:wght@300;400;500&display=swap');
+
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    background-color: #0b0f19;
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(14, 165, 233, 0.12) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(99, 102, 241, 0.12) 0px, transparent 50%);
+    background-attachment: fixed;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+.container {
+    width: 1200px;
+    margin: 30px auto;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    background: linear-gradient(135deg, #0b0f19 0%, #1e1b4b 100%);
+    padding: 15px 35px;
+    border-bottom: 2px solid #38bdf8;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.brand-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+}
+
+.brand-logo-img {
+    height: 55px;
+    width: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.brand-name {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.brand-name .accent-text {
+    color: #38bdf8;
+}
+
+nav.top-menu {
+    width: 100%;
+    background-color: #090d16;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+nav.top-menu ul {
+    list-style: none;
+}
+
+nav.top-menu ul li {
+    float: left;
+}
+
+nav.top-menu ul li a {
+    display: block;
+    padding: 16px 28px;
+    color: #94a3b8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav.top-menu ul li a:hover, 
+nav.top-menu ul li a.active {
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.08);
+}
+
+nav.top-menu ul li a.cart-icon-btn {
+    position: relative;
+    padding-right: 36px;
+}
+
+.cart-badge {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    min-width: 18px;
+    height: 18px;
+    line-height: 18px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.clear {
+    clear: both;
+}
+
+.main-wrapper {
+    width: 100%;
+}
+
+aside.side-menu {
+    float: left;
+    width: 250px;
+    background-color: rgba(11, 15, 25, 0.6);
+    padding: 30px 15px;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+aside.side-menu h3 {
+    font-family: 'Chakra Petch', sans-serif;
+    color: #38bdf8;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-left: 3px solid #38bdf8;
+    padding-left: 12px;
+}
+
+aside.side-menu ul {
+    list-style: none;
+}
+
+aside.side-menu ul li {
+    margin-bottom: 6px;
+}
+
+aside.side-menu ul li a {
+    display: block;
+    padding: 12px 16px;
+    color: #818cf8;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+aside.side-menu ul li a:hover {
+    color: #ffffff;
+    background: rgba(99, 102, 241, 0.15);
+    padding-left: 20px;
+}
+
+main.content {
+    float: left;
+    width: 940px;
+    padding: 35px;
+    box-sizing: border-box;
+}
+
+.confirm-card {
+    background: rgba(30, 41, 59, 0.4);
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    border-radius: 12px;
+    padding: 35px;
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.success-icon-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    background: rgba(74, 222, 128, 0.1);
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 1px solid rgba(74, 222, 128, 0.3);
+    box-shadow: 0 0 20px rgba(74, 222, 128, 0.2);
+}
+
+.confirm-card h2 {
+    font-family: 'Chakra Petch', sans-serif;
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.confirm-subtitle {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    margin-bottom: 18px;
+}
+
+.order-id-badge {
+    display: inline-block;
+    background: #090d16;
+    color: #38bdf8;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+}
+
+.confirm-details-box, 
+.shipping-info-box {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.confirm-details-box h4, 
+.shipping-info-box h4 {
+    font-family: 'Chakra Petch', sans-serif;
+    color: #38bdf8;
+    font-size: 1.05rem;
+    margin-bottom: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 6px;
+}
+
+.confirm-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    margin-bottom: 8px;
+}
+
+.confirm-item.total {
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.confirm-item .item-price, 
+.confirm-item .total-price {
+    font-family: 'Chakra Petch', sans-serif;
+    color: #38bdf8;
+}
+
+.confirm-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.btn-home {
+    background: linear-gradient(135deg, #38bdf8 0%, #6366f1 100%);
+    color: #ffffff;
+    padding: 10px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-shop-more {
+    background: rgba(255, 255, 255, 0.05);
+    color: #94a3b8;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    background-color: #090d16;
+    color: #64748b;
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.9rem;
+}

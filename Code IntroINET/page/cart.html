@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FloydTech | ตะกร้าสินค้า</title>
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/cart.css  ">
+</head>
+<body>
+    <div class="container">
+        <!-- 1. Header with Left-Aligned Logo & Shop Title -->
+        <header>
+            <div class="header-container">
+                <a href="index.html" class="brand-link" title="FLoydTech Electronics">
+                    <img src="/img/logo.jpg" alt="FLoydTech Logo" class="brand-logo-img">
+                    <span class="brand-name">FLOYD<span class="accent-text">TECH</span></span>
+                </a>
+            </div>
+        </header>
+
+        <!-- 2. Top Menu -->
+        <nav class="top-menu">
+            <ul class="clearfix">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="product.html">สินค้าทั้งหมด</a></li>
+                <li><a href="#">ติดต่อเรา</a></li>
+                <!-- Cart Icon with SVG -->
+                <li style="float: right;">
+                    <a href="cart.html" class="cart-icon-btn active" title="ตะกร้าสินค้า">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; display: inline-block;">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span class="cart-badge">2</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="main-wrapper clearfix">
+            <!-- 3. Side Menu -->
+            <aside class="side-menu">
+                <h3>หมวดหมู่สินค้า</h3>
+                <ul>
+                    <li><a href="product.html#gaming-gear">Gaming Gear</a></li>
+                    <li><a href="product.html#laptop">Gaming Laptop</a></li>
+                    <li><a href="product.html#pc-components">PC Components</a></li>
+                    <li><a href="product.html#monitors">Monitors</a></li>
+                    <li><a href="product.html#gadgets">Gadgets & Acc</a></li>
+                </ul>
+            </aside>
+
+            <!-- 4. Content Area: Shopping Cart -->
+            <main class="content">
+                <h3 class="category-title">🛒 ตะกร้าสินค้าของคุณ</h3>
+
+                <div class="cart-container clearfix">
+                    
+                    <!-- Left: Cart Items List Table -->
+                    <div class="cart-items-wrapper">
+                        <table class="cart-table">
+                            <thead>
+                                <tr>
+                                    <th>สินค้า</th>
+                                    <th>ราคา</th>
+                                    <th>จำนวน</th>
+                                    <th>ราคารวม</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Item 1 -->
+                                <tr>
+                                    <td class="cart-product-info">
+                                        <img src="/img/Gaming Mouse.jpg" alt="RGB Gaming Mouse Pro">
+                                        <div>
+                                            <h4>RGB Gaming Mouse Pro</h4>
+                                            <span class="item-spec">Wireless / 26,000 DPI</span>
+                                        </div>
+                                    </td>
+                                    <td class="unit-price">1,290 ฿</td>
+                                    <td>
+                                        <div class="qty-picker">
+                                            <button class="qty-btn">-</button>
+                                            <input type="number" value="1" min="1" readonly>
+                                            <button class="qty-btn">+</button>
+                                        </div>
+                                    </td>
+                                    <td class="subtotal-price">1,290 ฿</td>
+                                    <td class="action-col">
+                                        <button class="remove-btn" title="ลบรายการนี้">&times;</button>
+                                    </td>
+                                </tr>
+
+                                <!-- Item 2 -->
+                                <tr>
+                                    <td class="cart-product-info">
+                                        <img src="/img/Gaming Keyboard.jpg" alt="Mechanical Keyboard RGB">
+                                        <div>
+                                            <h4>Mechanical Keyboard RGB</h4>
+                                            <span class="item-spec">Blue Switch / Thai Keycap</span>
+                                        </div>
+                                    </td>
+                                    <td class="unit-price">2,590 ฿</td>
+                                    <td>
+                                        <div class="qty-picker">
+                                            <button class="qty-btn">-</button>
+                                            <input type="number" value="1" min="1" readonly>
+                                            <button class="qty-btn">+</button>
+                                        </div>
+                                    </td>
+                                    <td class="subtotal-price">2,590 ฿</td>
+                                    <td class="action-col">
+                                        <button class="remove-btn" title="ลบรายการนี้">&times;</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="cart-actions">
+                            <a href="product.html" class="btn-continue">← เลือกซื้อสินค้าต่อ</a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Order Summary Sidebar -->
+                    <div class="cart-summary-wrapper">
+                        <div class="summary-card">
+                            <h4>สรุปคำสั่งซื้อ</h4>
+                            
+                            <div class="summary-row">
+                                <span>ราคาสินค้าทั้งหมด</span>
+                                <span>3,880 ฿</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>ค่าจัดส่ง</span>
+                                <span class="free-shipping">ฟรี</span>
+                            </div>
+                            <div class="summary-row discount">
+                                <span>ส่วนลดพิเศษ</span>
+                                <span>-0 ฿</span>
+                            </div>
+
+                            <hr class="summary-divider">
+
+                            <div class="summary-row total-row">
+                                <span>ยอดชำระสุทธิ</span>
+                                <span class="total-price">3,880 ฿</span>
+                            </div>
+
+                            <a href="confirm.html" class="btn-confirm">ดำเนินการชำระเงิน</a>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="clear"></div>
+            </main>
+        </div>
+
+        <!-- 5. Footer -->
+        <footer>
+            <p>&copy; 2026 FloydTech Electronics Store. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

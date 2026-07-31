@@ -1,0 +1,243 @@
+/* ===================================================
+   PRODUCT.CSS - Product Catalog Page Only
+   =================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Kanit:wght@300;400;500&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    background-color: #0b0f19;
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(14, 165, 233, 0.12) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(99, 102, 241, 0.12) 0px, transparent 50%);
+    background-attachment: fixed;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+.container {
+    width: 1200px;
+    margin: 30px auto;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    background: linear-gradient(135deg, #0b0f19 0%, #1e1b4b 100%);
+    padding: 15px 35px;
+    border-bottom: 2px solid #38bdf8;
+}
+
+.header-container { 
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start; 
+}
+
+.brand-link { 
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+    text-decoration: none; 
+}
+.brand-logo-img { 
+    height: 55px; 
+    width: auto; 
+    display: block; 
+    border-radius: 8px; 
+}
+.brand-name { 
+    font-family: 'Chakra Petch', sans-serif; 
+    font-size: 1.8rem; 
+    font-weight: 700; 
+    color: #ffffff; 
+}
+.brand-name .accent-text {
+     color: #38bdf8; 
+    }
+
+nav.top-menu { 
+    width: 100%; 
+    background-color: #090d16; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
+}
+nav.top-menu ul { 
+    list-style: none; 
+}
+nav.top-menu ul li { 
+    float: left; 
+}
+nav.top-menu ul li a { 
+    display: block; 
+    padding: 16px 28px; 
+    color: #94a3b8; 
+    text-decoration: none; 
+    font-weight: 500; 
+}
+nav.top-menu ul li a:hover, nav.top-menu ul li a.active { 
+    color: #38bdf8; 
+    background: rgba(56, 189, 248, 0.08); 
+}
+nav.top-menu ul li a.cart-icon-btn { 
+    position: relative; 
+    padding-right: 36px; 
+}
+
+.cart-badge {
+    position: absolute; 
+    top: 10px; 
+    right: 12px; 
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: #ffffff; 
+    font-size: 0.75rem; 
+    font-weight: 700; 
+    min-width: 18px; 
+    height: 18px; 
+    line-height: 18px; 
+    border-radius: 50%; 
+    text-align: center;
+}
+
+.clearfix::after { 
+    content: ""; 
+    clear: both; 
+    display: table;
+ }
+.clear { 
+    clear: both; 
+}
+.main-wrapper { 
+    width: 100%; 
+}
+
+aside.side-menu {
+    float: left; 
+    width: 250px; 
+    background-color: rgba(11, 15, 25, 0.6); 
+    padding: 30px 15px; 
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+aside.side-menu h3 { 
+    font-family: 'Chakra Petch', sans-serif; 
+    color: #38bdf8; font-size: 1.1rem; 
+    text-transform: uppercase; 
+    margin-bottom: 20px; 
+    border-left: 3px solid #38bdf8; 
+    padding-left: 12px; 
+}
+aside.side-menu ul { 
+    list-style: none; 
+}
+aside.side-menu ul li { 
+    margin-bottom: 6px; 
+}
+aside.side-menu ul li a { 
+    display: block; 
+    padding: 12px 16px; 
+    color: #818cf8; 
+    text-decoration: none; 
+    border-radius: 8px; 
+}
+aside.side-menu ul li a:hover { 
+    color: #ffffff; 
+    background: rgba(99, 102, 241, 0.15); 
+    padding-left: 20px; 
+}
+
+main.content { 
+    float: left; 
+    width: 940px; 
+    padding: 35px; 
+    box-sizing: border-box; 
+}
+
+.category-title {
+    clear: both; 
+    margin-top: 35px;
+     margin-bottom: 20px; 
+     font-family: 'Chakra Petch', sans-serif; 
+     color: #38bdf8; 
+     border-bottom: 1px solid rgba(56, 189, 248, 0.2); 
+     padding-bottom: 8px; 
+     font-size: 1.4rem;
+}
+
+.product-card {
+    float: left; 
+    width: 268px; 
+    margin-right: 23px; 
+    margin-bottom: 30px; 
+    background: rgba(30, 41, 59, 0.4); 
+    border: 1px solid rgba(255, 255, 255, 0.08); 
+    border-radius: 12px; 
+    padding: 18px; 
+    text-align: center;
+}
+.product-card:hover { 
+    transform: translateY(-6px); 
+    border-color: #38bdf8; 
+    background: rgba(30, 41, 59, 0.7); 
+}
+.product-card:nth-child(3n) { 
+    margin-right: 0 !important; 
+}
+
+.product-img-wrapper { 
+    width: 100%; 
+    height: 180px; 
+    overflow: hidden; 
+    border-radius: 8px; 
+    margin-bottom: 15px; 
+    background-color: #090d16;
+ }
+.product-card img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+.product-card h4 {
+     margin: 10px 0 5px 0; 
+     font-size: 1.05rem; 
+     color: #f1f5f9; }
+.product-card .price { 
+    font-family: 'Chakra Petch', sans-serif; 
+    color: #38bdf8; 
+    font-weight: 700; 
+    font-size: 1.3rem; 
+    margin-bottom: 15px; 
+}
+
+.product-card a.btn-detail {
+    display: block; 
+    padding: 9px 0; 
+    background: rgba(56, 189, 248, 0.1); 
+    color: #38bdf8; 
+    text-decoration: none; 
+    border-radius: 6px; 
+    border: 1px solid rgba(56, 189, 248, 0.3);
+}
+.product-card a.btn-detail:hover { 
+    background: #38bdf8; 
+    color: #0f172a; 
+}
+
+footer { 
+    clear: both; 
+    width: 100%; 
+    background-color: #090d16; 
+    color: #64748b; 
+    text-align: center; 
+    padding: 25px; 
+    border-top: 1px solid rgba(255, 255, 255, 0.05); 
+    font-size: 0.9rem; 
+}
